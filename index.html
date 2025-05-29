@@ -1,0 +1,126 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<title>SuperMercado</title>
+</head>
+<body background="img/fondo1.jpg" class="background">
+			
+		<script>
+			function calcular()
+			{
+				
+   	  		var cant1=document.getElementById('cantidad1').value
+   	 				if (document.getElementById('cantidad1').value==="") {cant1=0;}
+					
+
+   	 		var prec1=document.getElementById('precio1').value
+   			var resultado1=parseInt(cant1)*parseInt(prec1)
+
+   			var cant2=document.getElementById('cantidad2').value
+   			var prec2=document.getElementById('precio2').value;
+		   	var resultado2=parseInt(cant2)*parseInt(prec2);
+		   	
+		   	var cant3=document.getElementById('cantidad3').value
+   			var prec3=document.getElementById('precio3').value
+   			var resultado3=parseInt(cant3)*parseInt(prec3)
+
+   			var cant4=document.getElementById('cantidad4').value
+   			var prec4=document.getElementById('precio4').value
+   			var resultado4=parseInt(cant4)*parseInt(prec4)
+
+		   	var resultadotot=resultado1+resultado2+resultado3+resultado4
+   			var cantotal=parseInt(cant1)+parseInt(cant2)+parseInt(cant3)+parseInt(cant4)
+
+		   	alert('El Total de la salsa :       $'+resultado1+"\nEl Total de el agua :       $"+resultado2+"\nEl Total de el mango :   $"+resultado3+"\nEl Total de el cilantro :  $"+resultado4+"\n───────────────────────────────────────────\nEl Total general es :       $"+resultadotot+"\n\nCantidad de productos es : "+cantotal+"")
+
+			};
+ 		</script>
+
+			<h1 size='20'>CATALOGO</h1>
+			<hr><br><br>
+			
+				<div>	
+					<font size="3" face="courier" color="#2ff0af">
+						<img src="img/salsa.jpg" width="200" height="200" class='salsa'><br>
+						
+						<input  size="11" type="numeros" placeholder="Teclea la cantidad " id="cantidad1"> 
+						<input size="11"type="numeros" placeholder="Teclea el precio " id= "precio1">
+
+
+						<hr><br>
+	   						
+						<img src="img/agua.jpg" width="200" height="200" class='agua'>
+						<br>	
+						<input size="11"type="numeros" placeholder="Teclea la cantidad" id="cantidad2">
+						<input size="11"type="numeros" placeholder="Teclea el precio" id= "precio2">
+						<hr><br>
+
+						<img src="img/mango.jpeg" width="200" height="200" class='mango'>
+						<br>
+						<input size="11"type="numeros" placeholder="Teclea la cantidad" id="cantidad3">
+						<input size="11"type="numeros" placeholder="Teclea el precio" id= "precio3">
+						<hr><br>
+
+						<img src="img/cilantro.jpeg" width="200" height="200" class='cilantro'>
+						<br>
+						<input size="11"type="numeros" placeholder="Teclea la cantidad" id="cantidad4">
+						<input size="11"type="numeros" placeholder="Teclea el precio" id= "precio4">
+						<hr><br>
+						
+						<input type="button" name="compra" value="comprar" onclick="calcular()">					
+
+					
+					</font>		
+				 </div>	
+
+					
+
+	<style type="text/css">
+		.salsa{
+			border-width: 5px;
+			border-color: red;
+			border-style: solid;
+		}
+
+		.agua{
+			border-width: 5px;
+			border-color: blue;
+			border-style: solid;
+		}
+
+		.mango{
+			border-width: 5px;
+			border-color: yellow;
+			border-style: solid;
+
+		}
+
+		.cilantro{
+			border-width: 5px;
+			border-color: green;
+			border-style: solid;
+
+		}
+
+		.background{
+			background-size: cover;
+		}
+
+
+		div{
+
+		}
+
+	</style>
+
+		
+		
+
+</body>
+
+
+
+
+</html>
